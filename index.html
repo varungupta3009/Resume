@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Recursive:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Sen:wght@400;700;800&family=Google+Sans+Display:wght@400;500;700&family=Google+Sans+Text+Beta:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/VRG-T.svg" />
+    <title>VRG's Resume</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body class="grid text-xs text-gray-200">
+    <section id="noprint" class="p-12 h-screen w-screen grid bg-gray-900 text-center" style="place-items: center;">
+      <div>
+        <h1 class="text-5xl">
+          You can choose from the options below.
+        </h1>
+        <div class="mt-8 mb-8 space-x-8">
+          <span class="inline-flex rounded-md shadow-sm">
+            <a href="/VRG's Resume [Latest].pdf" download="VRG's Resume.pdf" id="d-res-btn"
+              class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-500 focus:shadow-outline-blue active:bg-blue-400 transition ease-in-out duration-150">
+              Download Resume
+            </a>
+          </span>
+          <button onclick="window.print();"
+            class="hidden md:inline-block whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-300 focus:outline-none focus:text-white">
+            Print Resume
+          </button>
+        </div>
+        <div class="flex items-center justify-center mt-6">
+          <label for="selfshot" class="flex items-center cursor-pointer mb-4">
+            <div class="relative">
+              <input id="selfshot" type="checkbox" class="hidden" onclick="checkSelfshot(this.checked)" />
+              <div class="toggle__line w-8 h-3 bg-gray-400 rounded-full shadow-inner">
+              </div>
+              <div class="toggle__dot absolute w-5 h-5 bg-white rounded-full shadow inset-y-0 left-0">
+              </div>
+            </div>
+            <div
+              class="ml-3 whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-white focus:outline-none focus:text-gray-900">
+              Include Selfshot (not recommended)
+            </div>
+          </label>
+
+        </div>
+        <h2 class="md:hidden text-2xl text-gray-200 mt-8">
+          Printing available only on desktop.
+        </h2>
+        <h2 class="hidden sm:block text-2xl text-gray-200 mt-8">
+          Print Properties
+        </h2>
+        <h3 class="hidden sm:block mt-2 text-xl text-gray-300">
+          <!-- <span class="text-2xl text-gray-200 hidden">Strictly configure these properties if printing:&nbsp;</span>Sheet -->
+          Size: A4, Scale: 100% (or Default),
+          Margins: None, Background
+          Graphics: Check ☑.
+        </h3>
+      </div>
+    </section>
+    <header class="p-4 flex items-center justify-between font-medium">
+      <div class="flex items-center">
+        <img src="/assets/VRG.svg" id="logo" class="w-24 mr-3" />
+        <img src="/assets/VRG-S.jpg" id="official-pp" class="w-24 mr-3 rounded-full border-4 hidden" />
+        <div>
+          <h1 class="text-3xl">Varun R Gupta</h1>
+          <h3 class="text-xl">
+            Programmer, Designer and Developer
+          </h3>
+        </div>
+      </div>
+      <span class="text-base">
+        52, 11th Main Road<br />Banashankari Stage II<br />Bengaluru, INDIA
+        560070<br />
+        <span>
+          ▼ WHC9+8C BSK
+        </span>
+      </span>
+      <div class="text-base flex">
+        <div class="mr-2"></div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened inline mr-2"
+            width="12" height="12" viewbox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" /></svg>varungupta3009@gmail.com<br /><svg
+            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call inline mr-2" width="12"
+            height="12" viewbox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" /></svg>+91 97398 56528<br /><svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-social inline mr-2" width="12" height="12" viewbox="0 0 24 24"
+            stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <circle cx="12" cy="5" r="2" />
+            <circle cx="5" cy="19" r="2" />
+            <circle cx="19" cy="19" r="2" />
+            <circle cx="12" cy="14" r="3" />
+            <line x1="12" y1="7" x2="12" y2="11" />
+            <path d="M6.7 17.8l2.8 -2" />
+            <path d="M17.3 17.8l-2.8 -2" /></svg>varungupta3009<br /><svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-chrome inline mr-2" width="12" height="12" viewbox="0 0 24 24"
+            stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <circle cx="12" cy="12" r="9" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="12" y1="9" x2="20.4" y2="9" />
+            <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(120 12 12)" />
+            <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(240 12 12)" /></svg>//VRG.design/
+        </div>
+      </div>
+    </header>
+    <main role="main" class="p-8 grid">
+      <div class="left">
+        <section class="experience mb-8">
+          <h1 class="section-title text-2xl mb-2">
+            Experience
+          </h1>
+          <div class="job flex items-center mb-2">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C510BAQFE7nDLyYM2NA/company-logo_200_200/0?e=1604534400&v=beta&t=3PRA7M5PTxSlsGBDFhj7KMH41Q7U_963K1hgNIJqAjY"
+              class="company-logo w-12 mr-2 rounded-lg" />
+            <div>
+              <h2 class="title text-base font-semibold">
+                Penetration Tester
+              </h2>
+              <h3 class="employer text-base">
+                Center for Information Security, Forensics and Cyber Resilience
+              </h3>
+              <span class="duration text-sm text-gray-400">May 2020 – Present (4 mos)</span>
+            </div>
+          </div>
+          <div class="job flex items-center mb-2">
+            <img src="/assets/GD Logo.svg" class="company-logo w-12 mr-2" />
+            <div>
+              <h2 class="title text-base font-semibold">
+                Student Lead in Network Security and Web Development
+              </h2>
+              <h3 class="employer text-base">
+                Developer Student Clubs • PES University
+              </h3>
+              <span class="duration text-sm text-gray-400">Jan 2019 – Present (1 yr 8 mos)</span>
+            </div>
+          </div>
+          <div class="job flex items-center mb-2">
+            <img src="/assets/Mindtree Logo.svg" class="company-logo w-12 mr-2" />
+            <div>
+              <h2 class="title text-base font-semibold">
+                Software Engineer
+              </h2>
+              <h3 class="employer text-base">
+                Mindtree
+              </h3>
+              <span class="duration text-sm text-gray-400">Jul 2019 – Feb 2020 (8 mos)</span>
+            </div>
+          </div>
+        </section>
+        <section class="education mb-8">
+          <h1 class="section-title text-2xl mb-2">
+            Education
+          </h1>
+          <div class="school flex items-center mb-2">
+            <img src="/assets/PESU Logo.png" class="school-logo w-12 mr-2 rounded-lg" />
+            <div>
+              <h2 class="name text-base font-semibold">
+                PES University
+              </h2>
+              <h3 class="degree text-base">
+                Bachelor of Technology, Computer Science & Engineering
+              </h3>
+              <span class="year text-sm text-gray-400">2017 – 2021</span>
+            </div>
+          </div>
+          <div class="school flex items-center mb-2">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C510BAQGlJiX1RbDwNw/company-logo_200_200/0?e=1604534400&v=beta&t=C_G2h-9f3zQGpEsEnrmnPad-00VxKoRUIqoY726OoGU"
+              class="school-logo w-12 mr-2" />
+            <div>
+              <h2 class="name text-base font-semibold">
+                R. V. PU College
+              </h2>
+              <h3 class="degree text-base">
+                Pre-University, Affiliated to NCERT, New Delhi, Computer Science
+              </h3>
+              <span class="year text-sm text-gray-400">2015 – 2017</span>
+            </div>
+          </div>
+          <div class="school flex items-center mb-2">
+            <img src="/assets/Carmel School Wreath.webp" class="school-logo w-12 mr-2" />
+            <div>
+              <h2 class="name text-base font-semibold">
+                Carmel School, Padmanabhanagar
+              </h2>
+              <h3 class="degree text-base">
+                ICSE, New Delhi — SSLC, Karnataka
+              </h3>
+              <span class="year text-sm text-gray-400">2002 – 2015</span>
+            </div>
+          </div>
+        </section>
+        <section class="awards mb-8">
+          <h1 class="section-title text-2xl mb-2">
+            Publications & Awards
+          </h1>
+          <div class="mb-2">
+            <h2 class="name text-base font-semibold">
+              Software Implementation of an Automatic Movable Road Barrier
+            </h2>
+            <h3 class="degree text-base">
+              IEEE, October 2019, ISBN: 978-1-7281-1576-4
+            </h3>
+          </div>
+          <div class="mb-2">
+            <h2 class="name text-base font-semibold">
+              Prof. C N R Rao Merit Scholarship
+            </h2>
+            <h3 class="degree text-base">
+              PES University, November 2019
+            </h3>
+          </div>
+        </section>
+        <section class="certifications mb-8">
+          <h1 class="section-title text-2xl mb-2">
+            Licenses and Certifications
+          </h1>
+          <div class="mb-2">
+            <h2 class="name text-base font-semibold">
+              Associate Cloud Engineer
+            </h2>
+            <h3 class="degree text-base">
+              Google, August 2020
+            </h3>
+          </div>
+        </section>
+        <section class="languages-sec mb-8">
+          <h1 class="section-title text-2xl mb-2">
+            Languages
+          </h1>
+          <div class="languages flex">
+            <div class="language mr-4">
+              <h3 class="text-base">
+                English
+              </h3>
+              <progress class="skl-level" value="100" max="100"></progress>
+            </div>
+            <div class="language mr-6">
+              <h3 class="text-base">
+                Hindi
+              </h3>
+              <progress class="skl-level" value="90" max="100"></progress>
+            </div>
+            <div class="language mr-6">
+              <h3 class="text-base">
+                Kannada
+              </h3>
+              <progress class="skl-level" value="55" max="100"></progress>
+            </div>
+          </div>
+        </section>
+        <section class="hobbies">
+          <h1 class="section-title text-2xl mr-12">
+            Hobbies
+          </h1>
+          <h2 class="name text-base flex">
+            <span class="flex-grow">📖 Reading</span>
+            <span class="flex-grow">🎮 Gaming</span>
+            <span class="flex-grow">✈️ Virtual Aviation</span>
+            <span class="flex-grow">🎶 Music</span>
+          </h2>
+        </section>
+      </div>
+      <div class="right">
+        <section class="skills mb-8">
+          <h1 class="section-title text-2xl mb-2">
+            Knowledge and Skills
+          </h1>
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Python 3
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="100" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="100" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              JavaScript
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="90" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="100" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              C/C++
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="95" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="80" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-6">
+            <h2 class="skill-name text-base font-semibold">
+              Java, C#, Go
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="70" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="60" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Frontend Design and Development
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="100" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="100" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Full-Stack Web Development
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="85" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="90" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Angular (TS), React (JS/TS)
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="80" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="95" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-6">
+            <h2 class="skill-name text-base font-semibold">
+              WordPress, CMS
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="100" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Adobe Photoshop & Illustrator
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="100" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="100" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Adobe After Effects and Premiere Pro
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="100" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="90" max="100"></progress>
+            </div>
+          </div>
+          <div class="skill mb-6">
+            <h2 class="skill-name text-base font-semibold">
+              Blender, Pixar Renderman
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="95" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="75" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="skill mb-2">
+            <h2 class="skill-name text-base font-semibold">
+              Cloud Architechture (GCP)
+            </h2>
+            <div class="skillset">
+              <h3 class="exp text-base text-gray-400">
+                Experience
+              </h3>
+              <progress class="exp-level" value="85" max="100"></progress>
+              <h3 class="skl text-base text-gray-400">
+                Skill
+              </h3>
+              <progress class="skl-level" value="90" max="100"></progress>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="p-4 py-5 flex justify-around items-end border-t-2 border-solid text-justify">
+      <div class="about border-l-2 pl-3">
+        <h1 class="text-2xl">
+          About me
+        </h1>
+        <h2 class="text-base">
+          I am a programmer and experienced web-developer, fluent in Python,
+          C++, C#, Go with over 9 years of experience in Python and C++, and
+          moderately versed in 7 other languages. I am a polymath and love to
+          explore and try new technologies and fiddling with anything related to
+          computers or the Windows OS in general. I am also a graphics designer
+          and a hobbyist hacker.
+        </h2>
+      </div>
+      <h1 class="text-xl in-r ml-6">
+        I recommend checking out my LinkedIn Profile for real-time accurate
+        information, to stay regularly updated and get in touch with me
+        instantly.
+      </h1>
+      <img src="/assets/LinkedIn Code QR.svg" id="inqr" />
+    </footer>
+  </body>
+
+</html>
