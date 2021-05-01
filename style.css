@@ -1,6 +1,7 @@
 /* CSS files add styling rules to your content */
 
-html, body {
+html,
+body {
 	overflow: hidden;
 }
 
@@ -9,9 +10,11 @@ html, body {
 }
 
 @media not print {
-  header, main, footer {
-    display: none;
-  }
+	header,
+	main,
+	footer {
+		display: none;
+	}
 }
 
 .toggle__dot {
@@ -146,6 +149,10 @@ input:checked ~ .toggle__dot {
 
 	.about {
 		flex-basis: 49%;
+	}
+
+	#resumelink {
+		text-align: right;
 	}
 
 	.in-r {
