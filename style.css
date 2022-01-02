@@ -158,4 +158,29 @@ input:checked ~ .toggle__dot {
 		/*     border-left-width: 2px;
     border-color: #4285F4; */
 	}
+
+	.job-ladder {
+		border-color: #4285f4;
+		transform: translateX(-2px);
+	}
+
+	.job-ladder::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		border: 6px solid #202124;
+		background-color: #4286f470;
+		transform: translate(-22px, -1px);
+	}
+
+	.job-ladder:first-child::before {
+		background-color: #4285f4;
+	}
+
+	.job-ladder:last-child {
+		border-color: #202124;
+	}
 }
