@@ -1,10 +1,11 @@
 html,
 body {
+	font-family: 'Google Sans', sans-serif;
 	overflow: hidden;
 }
 
 #noprint {
-	background-color: #202124;
+	background-color: #1f1f1f;
 }
 
 @media not print {
@@ -45,13 +46,12 @@ input:checked ~ .toggle__dot {
 	}
 
 	body h1 {
-		font-family: 'Recursive', sans-serif;
+		font-family: 'Sen', sans-serif;
 	}
 
 	header {
 		background-color: #4285f4;
 		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
-		font-family: 'Source Sans Pro', sans-serif;
 	}
 
 	#official-pp {
@@ -86,6 +86,11 @@ input:checked ~ .toggle__dot {
 	progress[value]::-webkit-progress-value {
 		background-color: #4285f4;
 		border-radius: 2px;
+		margin-top: -2px;
+	}
+
+	.hobbies {
+		margin-bottom: -4px;
 	}
 
 	.skillset {
@@ -124,39 +129,38 @@ input:checked ~ .toggle__dot {
 		color: #4285f4;
 	}
 
-	.about {
+	.about,
+	.connect {
 		border-color: #4285f4;
 	}
 
-	.about h1 {
+	.about h1,
+	.connect h1 {
 		font-family: 'Google Sans Display';
 		color: #4285f4;
+		margin-top: -6px;
 	}
 
-	#inqr {
-		height: 110px;
-	}
-
-	.language {
-		flex-grow: 1;
-	}
-
-	.hobbies {
-		flex-grow: 1;
+	.about h2,
+	.connect h2 {
+		margin-bottom: -2px;
 	}
 
 	.about {
-		flex-basis: 49%;
+		flex-basis: 56%;
+		margin-left: -6px;
+	}
+
+	.connect {
+		flex-basis: 27%;
+	}
+
+	#inqr {
+		height: 90px;
 	}
 
 	#resumelink {
 		text-align: right;
-	}
-
-	.in-r {
-		flex-basis: 31%;
-		/*     border-left-width: 2px;
-    border-color: #4285F4; */
 	}
 
 	.job-ladder {
