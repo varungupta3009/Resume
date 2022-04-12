@@ -1,0 +1,22 @@
+<script>
+	export let name;
+	export let level;
+</script>
+
+<div class="name">
+	<h3 class="text">{name}</h3>
+	<progress class="skl-level" value={level} max="100" />
+</div>
+
+<style>
+	.name {
+		flex: 1 1 0%;
+		flex-basis: 100%;
+		margin-right: 1.5rem;
+	}
+
+	.text {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+</style>
