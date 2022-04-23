@@ -1,11 +1,8 @@
-<script>
-	export let name = '';
-	export let exp;
-	export let skl;
-	export let end = false;
-</script>
+---
+const { name = '', exp, skl, end = false } = Astro.props;
+---
 
-<div class="skill {end ? 'end' : ''}">
+<div class={"skill " + (end ? "end" : "")}>
 	<h2 class="name">
 		{name}
 	</h2>

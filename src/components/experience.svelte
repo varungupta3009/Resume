@@ -28,19 +28,19 @@
 {#if ladder}
 	<div class="job">
 		<img
-			src="/assets/Experience/Google.svg"
-			class="logo"
-			alt="Google Logo"
+			src={logo}
+			class="logo {rounded ? 'rounded' : ''}"
+			alt={employer}
 		/>
 		<div>
-			<a href="https://www.google.com/">
+			<a href={site}>
 				{#each jobs as job, i}
 					<div class="job-ladder">
 						<h2 class="title">
 							{job.title}
 						</h2>
 						{#if !i}
-							<h3 class="employer">Google</h3>
+							<h3 class="employer">{employer}</h3>
 						{/if}
 						<span class="duration">
 							{job.start} – {job.end ? job.end : 'Present'}

@@ -25,6 +25,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.github span:first-of-type {
+	flex-basis: 100%;
+}
+
 img,
 picture,
 video,
@@ -87,7 +91,7 @@ a {
 
 @media print {
 	html {
-		display: block;
+		display: initial;
 		font-size: 12px;
 	}
 

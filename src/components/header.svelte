@@ -1,17 +1,21 @@
 <script>
-	export let checked;
+	import { checked } from '../stores';
+
+	let isChecked;
+
+	checked.subscribe((value) => (isChecked = value));
 </script>
 
 <header>
 	<div class="intro">
-		{#if checked}
+		{#if isChecked}
 			<img
-				src="/assets/VRG-S.jpg"
+				src="/img/VRG-S.jpg"
 				id="faceshot"
 				alt="Faceshot of Varun"
 			/>
 		{:else}
-			<img src="/assets/VRG.svg" id="logo" alt="The VRG Logo" />
+			<img src="/img/VRG.svg" id="logo" alt="The VRG Logo" />
 		{/if}
 		<div>
 			<h1 class="name">Varun R Gupta</h1>

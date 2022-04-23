@@ -1,14 +1,9 @@
-<script>
-	export let school;
-	export let logo;
-	export let site;
-	export let degree;
-	export let duration;
-	export let rounded = false;
-</script>
+---
+const { school, logo, site, degree, duration, rounded = false } = Astro.props;
+---
 
 <div class="job">
-	<img src={logo} class="logo {rounded ? 'rounded' : ''}" alt={school} />
+	<img src={logo} class={"logo " + (rounded ? "rounded" : "")} alt={school} />
 	<div class="details">
 		<a href={site}>
 			<h2 class="degree">

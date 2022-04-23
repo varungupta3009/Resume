@@ -1,57 +1,44 @@
-<script>
-	import Experience from './experience.svelte';
-	import Education from './education.svelte';
-	import Skill from './skill.svelte';
-	import Award from './award.svelte';
-	import data from '../data.json';
-	import Hobby from './hobby.svelte';
-	import Language from './language.svelte';
-</script>
+---
+import Experience from './experience.svelte';
+import Education from './education.astro';
+import Skill from './skill.astro';
+import Award from './award.astro';
+import data from '../data.json';
+import Hobby from './hobby.astro';
+import Language from './language.astro';
+---
 
 <main>
 	<div class="left">
 		<section class="experience">
 			<h1 class="section-title">Experience</h1>
-			<!-- <Ladder /> -->
-			{#each data.experiences as experience}
-				<Experience {...experience} />
-			{/each}
+			{data.experiences.map(experience => <Experience {...experience} />)}
 		</section>
 		<section class="education">
 			<h1 class="section-title">Education</h1>
-			{#each data.educations as education}
-				<Education {...education} />
-			{/each}
+			{data.educations.map(education => <Education {...education} />)}
 		</section>
 		<section class="awards">
 			<h1 class="section-title">Publications & Awards</h1>
-			{#each data.awards as award}
-				<Award {...award} />
-			{/each}
+			{data.awards.map(award => <Award {...award} />)}
 		</section>
 		<section class="languages">
 			<h1 class="section-title">Languages</h1>
 			<div class="languages-list">
-				{#each data.languages as language}
-					<Language {...language} />
-				{/each}
+				{data.languages.map(language => <Language {...language} />)}
 			</div>
 		</section>
 		<section class="hobbies">
 			<h1 class="section-title">Hobbies</h1>
 			<div class="hobbies-list">
-				{#each data.hobbies as hobby}
-					<Hobby {...hobby} />
-				{/each}
+				{data.hobbies.map(hobby => <Hobby {...hobby} />)}
 			</div>
 		</section>
 	</div>
 	<div class="right">
 		<section class="skills">
 			<h1 class="section-title">Knowledge and Skills</h1>
-			{#each data.skills as skill}
-				<Skill {...skill} />
-			{/each}
+			{data.skills.map(skill => <Skill {...skill} />)}
 		</section>
 		<div>
 			<span id="resumelink">

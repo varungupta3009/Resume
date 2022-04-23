@@ -1,0 +1,84 @@
+---
+import "../styles/global.css";
+import Landing from '../components/landing.astro';
+import Header from '../components/header.svelte';
+import Main from '../components/main.astro';
+import Footer from '../components/footer.astro';
+---
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>VRG's Resume</title>
+
+		<link rel='shortcut icon' type='image/png' href='/favicon.svg'>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Sen:wght@400;700;800&family=Google+Sans+Display:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+
+		<script>
+			console.log('%cVRG.', 'font-family: "Google Sans"; font-size: 10em;');
+
+			console.log(
+				'%cHello There!',
+				'font-family: Sen; font-size: 3em; color: #4285F4;'
+			);
+
+			console.log(
+				'%cGeneral Kenobi!',
+				'font-family: Sen; font-size: 1em; text-decoration: line-through;'
+			);
+
+			console.log(
+				"%cSneaky lil' fucker aren't you?",
+				'font-family: Sen; font-size: 1.5em;'
+			);
+
+			console.log(
+				"%cI assure you, there's nothing much to see (or do) here.",
+				'font-family: Sen; font-size: 2em;'
+			);
+
+			console.log(
+				'%cBut if you wanna get in touch, just hit me up with a message @varungupta3009 anywhere, or specifically, varungupta3009@gmail.com, along with your findings.',
+				'font-family: Sen; font-size: 1.5em;'
+			);
+
+			console.log(
+				'%cAnyway, good luck with your expedition, pirate!',
+				'font-family: Sen; font-size: 1.5em; color: #34A853;'
+			);
+		</script>
+	</head>
+
+	<body>
+		<div id="App">
+			<Landing />
+			<Header client:load />
+			<Main />
+			<Footer />
+		</div>
+	</body>
+
+	<style>
+		#App {
+			color: rgb(237, 242, 247);
+			font-size: 0.75rem;
+		}
+
+		@media print {
+			#App {
+				display: grid;
+				width: 21cm;
+				height: 29.7cm;
+				grid-template-rows: auto 1fr auto;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	</style>
+
+</html>

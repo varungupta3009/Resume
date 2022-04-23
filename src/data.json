@@ -4,7 +4,7 @@
 			"ladder": true,
 			"employer": "Google",
 			"site": "https://www.google.com/",
-			"logo": "/assets/Experience/Google.svg",
+			"logo": "/img/Experience/Google.svg",
 			"jobs": [
 				{
 					"title": "Corporate Operations Engineer",
@@ -21,7 +21,7 @@
 		{
 			"employer": "Hewlett Packard Enterprise",
 			"site": "https://hpe.com",
-			"logo": "/assets/Experience/Hewlett Packard Enterprise.svg",
+			"logo": "/img/Experience/Hewlett Packard Enterprise.svg",
 			"title": "Data and Reporting Analyst",
 			"start": "Feb 2021",
 			"end": "Aug 2021"
@@ -29,7 +29,7 @@
 		{
 			"employer": "Developer Student Clubs • PES University",
 			"site": "https://dscpesu.github.io/DSC-PESU/",
-			"logo": "/assets/Experience/Google Developers.svg",
+			"logo": "/img/Experience/Google Developers.svg",
 			"title": "Lead in Network Security and Web Development",
 			"start": "Jan 2019",
 			"end": "Sep 2020"
@@ -37,7 +37,7 @@
 		{
 			"employer": "Mindtree",
 			"site": "https://mindtree.com/",
-			"logo": "/assets/Experience/Mindtree.svg",
+			"logo": "/img/Experience/Mindtree.svg",
 			"title": "Software Engineer",
 			"start": "Jul 2019",
 			"end": "Feb 2020"
@@ -47,7 +47,7 @@
 		{
 			"school": "PES University",
 			"site": "https://pes.edu/",
-			"logo": "/assets/Education/PES University.webp",
+			"logo": "/img/Education/PES University.webp",
 			"degree": "Bachelor of Technology, Computer Science & Engineering",
 			"duration": "2017 – 2021",
 			"rounded": true
@@ -55,14 +55,14 @@
 		{
 			"school": "R. V. PU College",
 			"site": "https://rvpucollege.edu.in/",
-			"logo": "/assets/Education/Rashtreeya Vidyalaya.webp",
+			"logo": "/img/Education/Rashtreeya Vidyalaya.webp",
 			"degree": "K-PUC (CS), Affiliated to NCERT, New Delhi",
 			"duration": "2015 – 2017"
 		},
 		{
 			"school": "Carmel School, Padmanabhanagar",
 			"site": "https://carmelschool.edu.in/",
-			"logo": "/assets/Education/Carmel School.webp",
+			"logo": "/img/Education/Carmel School.webp",
 			"degree": "ICSE, New Delhi — SSLC, Karnataka",
 			"duration": "2002 – 2015"
 		}
