@@ -47,7 +47,7 @@
 		{
 			"school": "PES University",
 			"site": "https://pes.edu/",
-			"logo": "/img/Education/PES University.webp",
+			"logo": "/img/Education/PES University.jpg",
 			"degree": "Bachelor of Technology, Computer Science & Engineering",
 			"duration": "2017 – 2021",
 			"rounded": true
@@ -55,14 +55,14 @@
 		{
 			"school": "R. V. PU College",
 			"site": "https://rvpucollege.edu.in/",
-			"logo": "/img/Education/Rashtreeya Vidyalaya.webp",
+			"logo": "/img/Education/Rashtreeya Vidyalaya.png",
 			"degree": "K-PUC (CS), Affiliated to NCERT, New Delhi",
 			"duration": "2015 – 2017"
 		},
 		{
 			"school": "Carmel School, Padmanabhanagar",
 			"site": "https://carmelschool.edu.in/",
-			"logo": "/img/Education/Carmel School.webp",
+			"logo": "/img/Education/Carmel School.png",
 			"degree": "ICSE, New Delhi — SSLC, Karnataka",
 			"duration": "2002 – 2015"
 		}
