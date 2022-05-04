@@ -53,13 +53,13 @@
 	.download button {
 		display: none;
 		margin-left: 2rem;
-		color: #6b7280;
+		color: hsl(220, 12%, 70%);
 		font-size: 1rem;
 		font-weight: 500;
 		background: none;
 	}
 	.download button:hover {
-		color: #d1d5db;
+		color: white;
 	}
 	.download button:focus {
 		color: #ffffff;
@@ -124,16 +124,16 @@
 
 	.toggle-text {
 		margin-left: 0.75rem;
-		color: #6b7280;
+		color: hsl(220, 12%, 70%);
 		font-size: 1rem;
 		font-weight: 500;
 	}
 	.toggle-text:hover {
-		color: #fff;
+		color: white;
 	}
 	.toggle-text:focus {
 		outline: 0;
-		color: #111827;
+		color: white;
 	}
 	.toggle-text span {
 		display: none;

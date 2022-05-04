@@ -9,17 +9,13 @@
 <header>
 	<div class="intro">
 		{#if isChecked}
-			<img
-				src="/img/VRG-S.jpg"
-				id="faceshot"
-				alt="Faceshot of Varun"
-			/>
+			<img src="/img/VRG-S.jpg" id="faceshot" alt="Faceshot of Varun" />
 		{:else}
 			<img src="/img/VRG.svg" id="logo" alt="The VRG Logo" />
 		{/if}
 		<div>
 			<h1 class="name">Varun R Gupta</h1>
-			<h3 class="sub">Programmer, Web Developer & Designer</h3>
+			<h2 class="sub">Programmer, Web Developer & Designer</h2>
 		</div>
 	</div>
 	<a href="https://goo.gl/maps/bN2Y76FmAcY7JsL16">
@@ -152,6 +148,7 @@
 
 	.intro img {
 		width: 6rem;
+		height: 6rem;
 		margin-right: 0.75rem;
 	}
 
@@ -165,6 +162,7 @@
 	.name {
 		font-size: 1.875rem;
 		font-family: 'Google Sans Display', sans-serif;
+		color: #edf2f7;
 	}
 
 	.sub {
