@@ -7,9 +7,14 @@
 			"logo": "/img/Experience/Google.svg",
 			"jobs": [
 				{
+					"title": "Corporate Operations Engineer II",
+					"start": "May 2023",
+					"end": ""
+				},
+				{
 					"title": "Corporate Operations Engineer",
 					"start": "Jan 2022",
-					"end": ""
+					"end": "May 2023"
 				},
 				{
 					"title": "IT Resident",

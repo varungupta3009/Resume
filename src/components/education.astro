@@ -2,17 +2,17 @@
 const { school, logo, site, degree, duration, rounded = false } = Astro.props;
 ---
 
-<div class="job">
-	<img src={logo} class={"logo " + (rounded ? "rounded" : "")} alt={school} />
-	<div class="details">
+<div class='job'>
+	<img src={logo} class={'logo ' + (rounded ? 'rounded' : '')} alt={school} />
+	<div class='details'>
 		<a href={site}>
-			<h2 class="degree">
+			<h2 class='degree'>
 				{school}
 			</h2>
-			<h3 class="school">
+			<h3 class='school'>
 				{degree}
 			</h3>
-			<span class="duration">{duration}</span>
+			<span class='duration'>{duration}</span>
 		</a>
 	</div>
 </div>

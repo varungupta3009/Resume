@@ -1,14 +1,10 @@
 <script>
-	import { checked } from '../stores';
-
-	let isChecked;
-
-	checked.subscribe((value) => (isChecked = value));
+	import { selfshot } from '../selfshotStore';
 </script>
 
 <header>
 	<div class="intro">
-		{#if isChecked}
+		{#if $selfshot}
 			<img src="/img/VRG-S.jpg" id="faceshot" alt="Faceshot of Varun" />
 		{:else}
 			<img src="/img/VRG.svg" id="logo" alt="The VRG Logo" />

@@ -9,41 +9,45 @@ import Language from './language.astro';
 ---
 
 <main>
-	<div class="left">
-		<section class="experience">
-			<h1 class="section-title">Experience</h1>
-			{data.experiences.map(experience => <Experience {...experience} />)}
+	<div class='left'>
+		<section class='experience'>
+			<h1 class='section-title'>Experience</h1>
+			{
+				data.experiences.map((experience) => (
+					<Experience {...experience} />
+				))
+			}
 		</section>
-		<section class="education">
-			<h1 class="section-title">Education</h1>
-			{data.educations.map(education => <Education {...education} />)}
+		<section class='education'>
+			<h1 class='section-title'>Education</h1>
+			{data.educations.map((education) => <Education {...education} />)}
 		</section>
-		<section class="awards">
-			<h1 class="section-title">Publications & Awards</h1>
-			{data.awards.map(award => <Award {...award} />)}
+		<section class='awards'>
+			<h1 class='section-title'>Publications & Awards</h1>
+			{data.awards.map((award) => <Award {...award} />)}
 		</section>
-		<section class="languages">
-			<h1 class="section-title">Languages</h1>
-			<div class="languages-list">
-				{data.languages.map(language => <Language {...language} />)}
+		<section class='languages'>
+			<h1 class='section-title'>Languages</h1>
+			<div class='languages-list'>
+				{data.languages.map((language) => <Language {...language} />)}
 			</div>
 		</section>
-		<section class="hobbies">
-			<h1 class="section-title">Hobbies</h1>
-			<div class="hobbies-list">
-				{data.hobbies.map(hobby => <Hobby {...hobby} />)}
+		<section class='hobbies'>
+			<h1 class='section-title'>Hobbies</h1>
+			<div class='hobbies-list'>
+				{data.hobbies.map((hobby) => <Hobby {...hobby} />)}
 			</div>
 		</section>
 	</div>
-	<div class="right">
-		<section class="skills">
-			<h1 class="section-title">Knowledge and Skills</h1>
-			{data.skills.map(skill => <Skill {...skill} />)}
+	<div class='right'>
+		<section class='skills'>
+			<h1 class='section-title'>Knowledge and Skills</h1>
+			{data.skills.map((skill) => <Skill {...skill} />)}
 		</section>
 		<div>
-			<span id="resumelink">
+			<span id='resumelink'>
 				Generated at&nbsp;
-				<a href="https://resume.VRG.rocks/"> resume.VRG.rocks </a>
+				<a href='https://resume.VRG.rocks/'> resume.VRG.rocks</a>
 			</span>
 		</div>
 	</div>
@@ -61,7 +65,7 @@ import Language from './language.astro';
 	}
 
 	section:not(:last-of-type) {
-		margin-bottom: 1.25rem;
+		margin-bottom: 0.75rem;
 	}
 
 	.section-title {
@@ -69,10 +73,14 @@ import Language from './language.astro';
 		margin-bottom: 0.5rem;
 	}
 
+	section.languages {
+		margin-bottom: 0;
+	}
+
 	.hobbies-list {
 		font-size: 1rem;
 		margin-bottom: -4px;
-		margin-top: 0.75rem;
+		margin-top: 0.25rem;
 	}
 
 	.languages-list,

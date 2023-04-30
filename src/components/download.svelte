@@ -1,10 +1,10 @@
 <script>
-	import { checked } from '../stores';
+	import { selfshot } from '../selfshotStore';
 </script>
 
 <div class="download">
 	<span>
-		{#if $checked}
+		{#if $selfshot}
 			<a
 				href="/VRG's Resume [Latest] [Selfshot].pdf"
 				download="VRG's Resume (with Selfshot).pdf"
@@ -27,8 +27,7 @@
 <div class="toggle-div">
 	<label for="selfshot">
 		<div class="toggle">
-			<input id="selfshot" type="checkbox" bind:checked={$checked} />
-			<!-- onclick="checkSelfshot(this.checked)" -->
+			<input id="selfshot" type="checkbox" bind:checked={$selfshot} />
 			<div class="toggle__line" />
 			<div class="toggle__dot" />
 		</div>

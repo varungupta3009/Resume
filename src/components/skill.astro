@@ -2,15 +2,15 @@
 const { name = '', exp, skl, end = false } = Astro.props;
 ---
 
-<div class={"skill " + (end ? "end" : "")}>
-	<h2 class="name">
+<div class={'skill ' + (end ? 'end' : '')}>
+	<h2 class='name'>
 		{name}
 	</h2>
-	<div class="skillset">
-		<h3 class="type exp">Experience</h3>
-		<progress class="exp-level" value={exp} max="100" />
-		<h3 class="type skl">Skill</h3>
-		<progress class="skl-level" value={skl} max="100" />
+	<div class='skillset'>
+		<h3 class='type exp'>Experience</h3>
+		<progress class='exp-level' value={exp} max='100'></progress>
+		<h3 class='type skl'>Skill</h3>
+		<progress class='skl-level' value={skl} max='100'></progress>
 	</div>
 </div>
 

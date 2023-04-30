@@ -1,49 +1,54 @@
 ---
-import Download from "./download.svelte";
+import Download from './download.svelte';
 ---
 
 <section>
 	<div>
 		<h1>You can choose from the options below.</h1>
 		<Download client:load />
-		<h2 class="mobile">Printing available only on desktop.</h2>
-		<h2 class="desktop">Print Properties</h2>
+		<h2 class='mobile'>Printing available only on desktop.</h2>
+		<h2 class='desktop'>Print Properties</h2>
 		<h3>
 			Size: A4, Scale: 100% (or Default), Margins: None, Background
 			Graphics: Check ☑.
 		</h3>
-		<div class="github">
-			<script is:inline async defer src="https://buttons.github.io/buttons.js" />
+		<div class='github'>
+			<script
+				is:inline
+				async
+				defer
+				src='https://buttons.github.io/buttons.js'
+			></script>
 			<a
-				class="github-button"
-				href="https://github.com/varungupta3009"
-				data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-				data-size="large"
-				aria-label="Follow @varungupta3009 on GitHub"
+				class='github-button'
+				href='https://github.com/varungupta3009'
+				data-color-scheme='no-preference: dark; light: dark; dark: dark;'
+				data-size='large'
+				aria-label='Follow @varungupta3009 on GitHub'
 			>
 				Follow @varungupta3009
 			</a>
 			<a
-				class="github-button"
-				href="https://github.com/varungupta3009/resume"
-				data-color-scheme="no-preference: dark; light: light; dark: dark;"
-				data-icon="octicon-star"
-				data-size="large"
-				aria-label="Star varungupta3009/resume on GitHub">Star</a
+				class='github-button'
+				href='https://github.com/varungupta3009/resume'
+				data-color-scheme='no-preference: dark; light: light; dark: dark;'
+				data-icon='octicon-star'
+				data-size='large'
+				aria-label='Star varungupta3009/resume on GitHub'>Star</a
 			>
 			<a
-				class="github-button"
-				href="https://github.com/varungupta3009/resume/fork"
-				data-color-scheme="no-preference: dark; light: light; dark: dark;"
-				data-icon="octicon-repo-forked"
-				data-size="large"
-				aria-label="Fork varungupta3009/resume on GitHub">Fork</a
+				class='github-button'
+				href='https://github.com/varungupta3009/resume/fork'
+				data-color-scheme='no-preference: dark; light: light; dark: dark;'
+				data-icon='octicon-repo-forked'
+				data-size='large'
+				aria-label='Fork varungupta3009/resume on GitHub'>Fork</a
 			>
-			<div id="print-preview-font-fix">
-				<span style="font-family: Google Sans;">sš</span>
-				<span style="font-family: Google Sans Display;">sš</span>
-				<span style="font-family: Open Sans;">sš</span>
-				<span style="font-family: Sen;">sš</span>
+			<div id='print-preview-font-fix'>
+				<span style='font-family: Google Sans;'>sš</span>
+				<span style='font-family: Google Sans Display;'>sš</span>
+				<span style='font-family: Open Sans;'>sš</span>
+				<span style='font-family: Sen;'>sš</span>
 			</div>
 		</div>
 	</div>

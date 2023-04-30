@@ -1,18 +1,21 @@
 {
 	"name": "vrg-resume",
-	"version": "3.0.0",
+	"type": "module",
+	"version": "4.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
+		"astro": "astro",
 		"deploy": "node ./gh-pages.js"
 	},
-	"devDependencies": {
-		"@astrojs/svelte": "^0.1.1",
-		"astro": "^1.0.0-beta.17",
-		"gh-pages": "^3.2.3",
-		"svelte": "^3.47.0"
+	"dependencies": {
+		"@astrojs/svelte": "^2.1.0",
+		"astro": "^2.3.2",
+		"gh-pages": "^5.0.0",
+		"nanostores": "^0.8.1",
+		"svelte": "^3.58.0"
 	}
 }

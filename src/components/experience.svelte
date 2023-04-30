@@ -10,6 +10,7 @@
 	export let rounded = false;
 
 	let getExp = (d1, d2) => {
+		if (d2 < d1) d2 = d1;
 		let y,
 			m,
 			result = '(';
@@ -26,7 +27,7 @@
 </script>
 
 {#if ladder}
-	<div class="job">
+	<div class="ladder">
 		<img
 			src={logo}
 			class="logo {rounded ? 'rounded' : ''}"
@@ -85,9 +86,19 @@
 		margin-bottom: 0.75rem;
 	}
 
+	.ladder {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 0.75rem;
+	}
+
 	.logo {
 		width: 3rem;
 		margin-right: 1rem;
+	}
+
+	.ladder .logo {
+		margin-top: 0.5rem;
 	}
 
 	.details {
